@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* ============================ */
+/* RESET & FONT                 */
+/* ============================ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ============================ */
+/* CONTAINER                    */
+/* ============================ */
+.container {
+  flex: 2;
+  background: linear-gradient(180deg, #cbc1c1, #0096b6);
+  border: 4px solid #034655;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.tentangkami {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: #0096b6;
+  color: #ffe600;
+  padding: 12px 0;
+  margin-bottom: 20px;
+
+  letter-spacing: 1px;
+}
+
+
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 8px;
+}
+
+
+
+
+aside {
+  flex: 1;
+  min-width: 200px;
+  background: linear-gradient(135deg, #cbc1c1, #0096b6);
+  color: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+}
+
+aside h2 {
+  color: #ffe600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+aside ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+h2 {
+  color: #ffe600;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    flex-direction: column; 
+    gap: 15px;
+    padding: 5px;
+  }
+
+
+  aside {
+    padding: 20px;
+  }
+
+  aside h2 {
+    font-size: 20px;
+  }
+
+  .tentangkami {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
